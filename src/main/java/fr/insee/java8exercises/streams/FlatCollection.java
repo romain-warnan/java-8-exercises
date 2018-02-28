@@ -1,7 +1,8 @@
 package fr.insee.java8exercises.streams;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FlatCollection {
 
@@ -9,12 +10,8 @@ public class FlatCollection {
     }
 
     public static List<String> flattenCollection(List<List<String>> collection) {
-        List<String> newCollection = new ArrayList<>();
-        for (List<String> subCollection : collection) {
-            for (String value : subCollection) {
-                newCollection.add(value);
-            }
-        }
-        return newCollection;
+        return collection.stream()
+        	.flatMap(Collection::stream)
+        	.collect(Collectors.toList());
     }
 }

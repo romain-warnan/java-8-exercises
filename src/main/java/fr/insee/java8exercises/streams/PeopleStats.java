@@ -8,15 +8,9 @@ public class PeopleStats {
     }
 
     public static Stats calculateStats(List<Person> people) {
-        long sum = 0;
-        int min = people.get(0).getAge();
-        int max = 0;
-        for (Person person : people) {
-            int age = person.getAge();
-            sum += age;
-            min = Math.min(min, age);
-            max = Math.max(max, age);
-        }
+        int sum = people.stream().mapToInt(Person::getAge).sum();
+        int min = people.stream().mapToInt(Person::getAge).min().getAsInt();
+        int max = people.stream().mapToInt(Person::getAge).max().getAsInt();
         return new Stats(people.size(), sum, min, max);
     }
 }
