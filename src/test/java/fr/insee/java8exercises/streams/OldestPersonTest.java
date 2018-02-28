@@ -6,22 +6,19 @@ import fr.insee.java8exercises.streams.Person;
 
 import java.util.List;
 
-import static fr.insee.java8exercises.streams.Kids.*;
+import static fr.insee.java8exercises.streams.OldestPerson.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class KidsSpec {
+public class OldestPersonTest {
 
     @Test
-    public void kidNameShouldReturnNamesOfYoungerThan18() {
+    public void shouldReturnOldestPerson() {
         Person sara = new Person("Sara", 4);
         Person viktor = new Person("Viktor", 40);
         Person eva = new Person("Eva", 42);
-        Person anna = new Person("Anna", 5);
-        List<Person> collection = asList(sara, eva, viktor, anna);
-        assertThat(kidsNames(collection))
-                .contains("Sara", "Anna")
-                .doesNotContain("Viktor", "Eva");
+        List<Person> collection = asList(sara, eva, viktor);
+        assertThat(oldestPerson(collection)).isEqualToComparingFieldByField(eva);
     }
 
 }
