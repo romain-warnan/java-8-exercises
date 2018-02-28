@@ -1,6 +1,5 @@
 package fr.insee.java8exercises.streams;
 
-import java.util.IntSummaryStatistics;
 import java.util.List;
 
 public class PeopleStats {
@@ -8,7 +7,7 @@ public class PeopleStats {
     private PeopleStats() {
     }
 
-    public static Stats getStats7(List<Person> people) {
+    public static Stats getStats(List<Person> people) {
         long sum = 0;
         int min = people.get(0).getAge();
         int max = 0;
@@ -20,11 +19,4 @@ public class PeopleStats {
         }
         return new Stats(people.size(), sum, min, max);
     }
-
-    public static IntSummaryStatistics getStats(List<Person> people) {
-        return people.stream()
-                .mapToInt(Person::getAge)
-                .summaryStatistics();
-    }
-
 }

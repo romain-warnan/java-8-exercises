@@ -5,14 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static java.util.stream.Collectors.*;
-
 public class Grouping {
 
     private Grouping() {
     }
 
-    public static Map<String, List<Person>> groupByNationality7(List<Person> people) {
+    public static Map<String, List<Person>> groupByNationality(List<Person> people) {
         Map<String, List<Person>> map = new HashMap<>();
         for (Person person : people) {
             if (!map.containsKey(person.getNationality())) {
@@ -22,10 +20,4 @@ public class Grouping {
         }
         return map;
     }
-
-    public static Map<String, List<Person>> groupByNationality(List<Person> people) {
-        return people.stream() // Convert collection to Stream
-                .collect(groupingBy(Person::getNationality)); // Group people by nationality
-    }
-
 }
