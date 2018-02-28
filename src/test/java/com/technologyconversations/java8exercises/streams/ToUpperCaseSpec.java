@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static com.technologyconversations.java8exercises.streams.ToUpperCase.*;
+import static fr.insee.java8exercises.streams.ToUpperCase.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 

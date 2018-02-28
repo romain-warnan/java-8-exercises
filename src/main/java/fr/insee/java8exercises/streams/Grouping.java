@@ -1,4 +1,4 @@
-package com.technologyconversations.java8exercises.streams;
+package fr.insee.java8exercises.streams;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -2,9 +2,11 @@ package com.technologyconversations.java8exercises.streams;
 
 import org.junit.Test;
 
+import fr.insee.java8exercises.streams.Person;
+
 import java.util.List;
 
-import static com.technologyconversations.java8exercises.streams.Kids.*;
+import static fr.insee.java8exercises.streams.Kids.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
