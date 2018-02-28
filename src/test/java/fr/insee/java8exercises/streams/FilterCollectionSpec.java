@@ -14,7 +14,7 @@ public class FilterCollectionSpec {
     public void transformKeepStringsShorterThant4Characters() {
         List<String> collection = asList("My", "name", "is", "John", "Doe");
         List<String> expected = asList("My", "is", "Doe");
-        assertThat(transform(collection)).hasSameElementsAs(expected);
+        assertThat(stringsShorterThant4Characters(collection)).hasSameElementsAs(expected);
     }
 
 }

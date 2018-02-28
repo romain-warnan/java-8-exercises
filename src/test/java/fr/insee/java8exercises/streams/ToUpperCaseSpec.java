@@ -11,10 +11,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ToUpperCaseSpec {
 
     @Test
-    public void transformShouldConvertCollectionElementsToUpperCase() {
+    public void shouldConvertCollectionElementsToUpperCase() {
         List<String> collection = asList("My", "name", "is", "John", "Doe");
         List<String> expected = asList("MY", "NAME", "IS", "JOHN", "DOE");
-        assertThat(transform(collection)).hasSameElementsAs(expected);
+        assertThat(toUpperCase(collection)).hasSameElementsAs(expected);
     }
 
 }

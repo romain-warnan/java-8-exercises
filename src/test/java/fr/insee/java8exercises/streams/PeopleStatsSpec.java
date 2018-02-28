@@ -18,32 +18,32 @@ public class PeopleStatsSpec {
     List<Person> collection = asList(sara, eva, viktor);
 
     @Test
-    public void getStatsShouldReturnAverageAge() {
-        assertThat(getStats(collection).getAverage())
+    public void calculateStatsShouldReturnAverageAge() {
+        assertThat(calculateStats(collection).getAverage())
                 .isEqualTo((double)(4 + 40 + 42) / 3);
     }
 
     @Test
     public void getStatsShouldReturnNumberOfPeople() {
-        assertThat(getStats(collection).getCount())
+        assertThat(calculateStats(collection).getCount())
                 .isEqualTo(3);
     }
 
     @Test
     public void getStatsShouldReturnMaximumAge() {
-        assertThat(getStats(collection).getMax())
+        assertThat(calculateStats(collection).getMax())
                 .isEqualTo(42);
     }
 
     @Test
     public void getStatsShouldReturnMinimumAge() {
-        assertThat(getStats(collection).getMin())
+        assertThat(calculateStats(collection).getMin())
                 .isEqualTo(4);
     }
 
     @Test
     public void getStatsShouldReturnSumOfAllAges() {
-        assertThat(getStats(collection).getSum())
+        assertThat(calculateStats(collection).getSum())
                 .isEqualTo(40 + 42 + 4);
     }
 

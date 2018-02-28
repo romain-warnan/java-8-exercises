@@ -8,7 +8,7 @@ public class FlatCollection {
     private FlatCollection() {
     }
 
-    public static List<String> transform(List<List<String>> collection) {
+    public static List<String> flattenCollection(List<List<String>> collection) {
         List<String> newCollection = new ArrayList<>();
         for (List<String> subCollection : collection) {
             for (String value : subCollection) {
