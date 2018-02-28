@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /*
 Sum all elements of a collection
  */
-public class SumSpec {
+public class SumTest {
 
     @Test
     public void calculateSumShouldReturnSumOfAllIntegersInCollection() {

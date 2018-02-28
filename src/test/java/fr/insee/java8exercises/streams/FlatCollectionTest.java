@@ -8,7 +8,7 @@ import static fr.insee.java8exercises.streams.FlatCollection.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FlatCollectionSpec {
+public class FlatCollectionTest {
 
     @Test
     public void transformShouldFlattenCollection() {

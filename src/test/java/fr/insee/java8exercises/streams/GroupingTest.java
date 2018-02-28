@@ -11,7 +11,7 @@ import static fr.insee.java8exercises.streams.Grouping.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class GroupingSpec {
+public class GroupingTest {
 
     @Test
     public void personsShouldBeSeparatedByNationality() {

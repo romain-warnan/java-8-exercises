@@ -10,7 +10,7 @@ import static fr.insee.java8exercises.streams.PeopleStats.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PeopleStatsSpec {
+public class PeopleStatsTest {
 
     Person sara = new Person("Sara", 4);
     Person viktor = new Person("Viktor", 40);
