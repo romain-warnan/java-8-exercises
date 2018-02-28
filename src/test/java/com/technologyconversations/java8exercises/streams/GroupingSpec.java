@@ -11,9 +11,6 @@ import static fr.insee.java8exercises.streams.Grouping.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-/*
-Group people by nationality
- */
 public class GroupingSpec {
 
     @Test

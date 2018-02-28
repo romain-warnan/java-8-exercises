@@ -10,9 +10,6 @@ import static fr.insee.java8exercises.streams.Joining.namesToString;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-/*
-Return people names separated by comma
- */
 public class JoiningSpec {
 
     @Test

@@ -10,9 +10,6 @@ import static fr.insee.java8exercises.streams.PeopleStats.*;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-/*
-Get people statistics: average age, count, maximum age, minimum age and sum og all ages.
- */
 public class PeopleStatsSpec {
 
     Person sara = new Person("Sara", 4);
