@@ -43,7 +43,7 @@ PeopleStats (summaryStatistics)
 
 Get people statistics: average age, count, maximum age, minimum age and sum og all ages.
 
-Partitionaing (partitioningBy)
+Partitioning (partitioningBy)
 =========================
 
 Partition adults and kids
@@ -53,3 +53,7 @@ Grouping (groupingBy)
 
 Group people by nationality
 
+Grouping and counting (maxBy)
+=============================
+
+Selct most common nationality
