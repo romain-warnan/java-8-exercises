@@ -1,6 +1,6 @@
 package fr.insee.java8exercises.streams;
 
-import java.util.Comparator;
+import static java.util.Comparator.*;
 import java.util.List;
 import java.util.Map.Entry;
 import static java.util.stream.Collectors.*;
@@ -15,7 +15,7 @@ public class MaxBy {
 			.collect(groupingBy(Person::getNationality, counting()))
 			.entrySet()
 			.stream()
-			.max(Comparator.comparingLong(Entry::getValue))
+			.max(comparingLong(Entry::getValue))
 			.map(Entry::getKey)
 			.get();
 	}

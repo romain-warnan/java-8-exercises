@@ -2,7 +2,7 @@ package fr.insee.java8exercises.streams;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.*;
 
 public class FlatCollection {
 
@@ -12,6 +12,6 @@ public class FlatCollection {
     public static List<String> flattenCollection(List<List<String>> collection) {
         return collection.stream()
         	.flatMap(Collection::stream)
-        	.collect(Collectors.toList());
+        	.collect(toList());
     }
 }

@@ -1,7 +1,7 @@
 package fr.insee.java8exercises.streams;
 
 import java.util.List;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.*;
 
 public class Joining {
 
@@ -11,6 +11,6 @@ public class Joining {
     public static String namesToString(List<Person> people) {
         return people.stream()
         	.map(Person::getName)
-        	.collect(Collectors.joining(", ", "Names: ", "."));
+        	.collect(joining(", ", "Names: ", "."));
     }
 }

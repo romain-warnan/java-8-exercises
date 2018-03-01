@@ -2,7 +2,7 @@ package fr.insee.java8exercises.streams;
 
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.*;
 
 public class Kids {
 
@@ -10,7 +10,7 @@ public class Kids {
         return people.stream()
         	.filter(Kids::isKid)
         	.map(Person::getName)
-        	.collect(Collectors.toSet());
+        	.collect(toSet());
     }
 
 	public static boolean isKid(Person person) {
