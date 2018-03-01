@@ -1,13 +1,3 @@
-Prepare project for your favorite IDE
-===================================
-Use gradle to import dependencies and create ide-specific project files.  Gradle wrapper scripts are included (no need to download anything new)
-```
-./gradlew eclipse   # Eclipse
-./gradlew idea      # IntelliJ IDEA
-
-# use gradlew.bat on Windows
-```
-
 ToUpperCase (map)
 =================
 
@@ -43,7 +33,7 @@ PeopleStats (summaryStatistics)
 
 Get people statistics: average age, count, maximum age, minimum age and sum og all ages.
 
-Partitionaing (partitioningBy)
+Partitioning (partitioningBy)
 =========================
 
 Partition adults and kids
@@ -53,3 +43,7 @@ Grouping (groupingBy)
 
 Group people by nationality
 
+Grouping and counting (maxBy)
+=============================
+
+Selct most common nationality
